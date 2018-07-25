@@ -4,8 +4,15 @@ Simple Sinatra app to return HTTP status codes.
 
 ## Usage
 
-Pass the status code you would like in the URL e.g.
+To start the application:
 
 ```bash
-http://localhost:4567/404 #returns a 404 response
+bundle install #installs dependencies (first run only)
+foreman start  #starts the application
+```
+
+Then pass in the http code you require as a relative URL i.e.:
+
+```bash
+curl -v http://localhost:5000/404 #shows a 404 not found response
 ```
